@@ -1,0 +1,119 @@
+.home{
+    background-image: url(../../../public/images/Rectangle\ 1.png);
+    width: 100%;
+    height: 670px;
+    background-clip: padding-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 100 !important;
+}
+.tagl_text_div{
+    margin-top: 170px;
+}
+.sociali_logo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 600px;
+}
+.sociali_logo img{
+    transition: 0.6s;
+    cursor: pointer;
+}
+.sociali_logo img:hover{
+  transform: scale(1.2);
+}
+
+.btn_get{
+    color: white;
+    background-color: black;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 1s ease 0s;
+    width: 160px;
+    height: 45px;
+}
+.btn_get:focus,
+.btn_get:hover{
+    color: black;
+    font-weight: 600;
+}
+.btn_get:before{
+    content: "";
+    background-color: #1EE1B3;
+    color: black;
+    width: 0px;
+    height: 0px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;         
+    left: 50%;
+    top: 50%;
+    z-index: -1;
+    transition: top .5s ease-in .5s, width .5s ease-out, height .5s ease-out;
+}
+.btn_get:focus:before,
+.btn_get:hover:before{
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    transition: top .5s ease-in, width .5s ease-out .5s, height .5s ease-out .5s;
+}
+.enter_btn{
+    border: 2px solid black;
+    width: 200px;
+    height: 45px;
+    font-weight: bold;
+    color: white;
+    margin-right: 25px;
+}
+
+@media screen and (max-width:1497px) {
+    .tagl_text_div{
+        margin-top: 100px;
+    }
+}
+@media screen and (max-width:426px) {
+    .main_home_div{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .sociali_logo{
+        height: 170px;
+    }
+}
+@media screen and (max-width:376px) {
+    .btn_enter_div{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .tagl_text_div{
+        margin-top: 60px;
+    }
+    .enter_btn{
+        margin-right: 0px;
+    }
+    .btn_get{
+        margin-top: 20px;
+    }
+    .begin_header{
+        font-size: 110px;
+    }
+}
+@media screen and (max-width:321px) {
+    .begin_header{
+        font-size: 90px;
+    }
+    .sociali_logo{
+        height: 130px;
+    }
+}

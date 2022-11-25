@@ -1,0 +1,39 @@
+.enhance{
+    background-color: var(--bg-background2);
+}
+.enhance_text::after{
+    display: block;
+    content: "";
+    width: 80px;
+    height: 3px;
+    border-radius: 5px;
+    background-color: aqua;
+    margin: 25px auto;
+}
+
+@media screen and (max-width:426px) {
+    .enhance{
+        height: 350px;
+    }
+}
+
+.enhance_btns{
+    border: 2px solid white;
+    width: 80px !important;
+    height: 80px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.enhance_btns:hover{
+    border: 2px solid aqua;
+}
+.img_stop{
+    color: white !important;
+    transition: 0.8s !important;
+}
+.enhance_btns:hover .img_stop{
+    transform: scale(1.3);
+    color: aqua !important;
+}

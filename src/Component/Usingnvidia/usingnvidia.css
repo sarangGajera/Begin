@@ -1,0 +1,34 @@
+.usingnvidia {
+  background-image: url(../../../public/images/nvideosec-033-03\ 1.png);
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+
+@media screen and (max-width:769px) {
+  .using_div {
+    padding-top: 70px;
+  }
+  .usingnvidia {
+    width: 100%;
+    height: 250px;
+  }
+}
+@media screen and (max-width:426px) {
+    .using_div {
+        padding-top: 30px;
+      }
+}
+@media screen and (max-width:376px) {
+    .usingnvidia {
+        width: 100%;
+        height: 350px;
+      }
+}
+@media screen and (max-width: px) {
+}
+@media screen and (max-width: px) {
+}

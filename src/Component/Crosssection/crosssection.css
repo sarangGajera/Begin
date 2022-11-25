@@ -1,0 +1,48 @@
+.crosssection{
+    margin-top: 60px;
+    position: relative;
+}
+.cross_div_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.img_dol_cross{
+   position: absolute;
+   right: 20px;
+   bottom: 5px;
+}
+.img_begin_cross{
+    width: 600px;
+    height: 650px;
+}
+
+@media screen and (max-width:1025px) {
+    .img_dol_cross{
+        bottom: -10px !important;
+     }
+}
+@media screen and (max-width:769px) {
+    .img_dol_cross{
+        bottom: -10px !important;
+        object-fit: contain;
+     }
+     .img_begin_cross{
+        object-fit: contain;
+    }
+}
+@media screen and (max-width:426px) {
+    .cross_div_main{
+       flex-direction: column;
+    }
+    .cross_div_text{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:376px) {
+    .cross_div_text{
+        width: 100% !important;
+        overflow-x: hidden;
+
+    }
+}

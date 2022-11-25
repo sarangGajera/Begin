@@ -1,0 +1,52 @@
+.howuseful{
+    background-color: var(--bg-background3);
+}
+.how_text::after{
+    display: block;
+    content: "";
+    width: 80px;
+    height: 3px;
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 20px auto;
+}
+
+.lorm_btn_how{
+    width: 140px !important;
+    height: 35px !important;
+    cursor: pointer;
+}
+.loremm_btn_how{
+    transition: 0.4s !important;
+}
+.lorm_btn_how:hover .loremm_btn_how{
+    transform: translateX(35%);
+}
+
+@media screen and (max-width:1025px) {
+    .howuseful{
+        height: 545px !important;
+    }
+}
+@media screen and (max-width:769px) {
+    .howuseful{
+        height: 565px !important;
+    }
+}
+@media screen and (max-width:426px) {
+    .howuseful{
+        height: 922px !important;
+    }
+    .box_div_man{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .box_two{
+        margin: 20px 0 20px 0;
+    }
+}
+@media screen and (max-width:320px) {
+    .howuseful{
+        height: 1066px !important;
+    }
+}

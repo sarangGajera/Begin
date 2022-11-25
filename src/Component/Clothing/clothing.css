@@ -1,0 +1,114 @@
+.box_div_clothi{
+    position: relative;
+}
+.img_div_main{
+   position: absolute;
+   top: -60px;
+   right: 40px;
+}
+.cloth_line{
+   background-color: #515151;
+   width: 240px;
+   height: 3px;
+   border-radius: 5px;
+   margin-top: 35px;
+}
+.cloth_lines{
+   background-color: #1EE1B3;
+   width: 160px;
+   height: 3px;
+   border-radius: 5px;
+}
+
+.btn_discover{
+   width: 180px;
+   height: 45px;
+   margin-top: 25px;
+}
+.disco_btns{
+   background-color: white;
+   color: black;
+   font-weight: 700;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   border-radius: 5px;
+   width: 180px;
+   height: 45px;
+   transition: 0.8s;
+}
+.error_btn{
+   transition: 0.8s !important;
+}
+.btn_discover:hover .disco_btns{
+   background-color: black;
+   color: white;
+} 
+.btn_discover:hover .error_btn{
+   transform: translateX(25%);
+}
+
+
+.clothing_div_main{
+   position: absolute;
+   z-index: 1000;
+}
+
+@media screen and (max-width:769px) {
+   .btn_discov{
+      margin-top: 20px;
+   }
+   .cloth_line{
+      margin-top: 20px;
+   }
+   
+}
+
+@media screen and (max-width:426px) {
+   .clothing_div_main{
+      padding-top: 10px;
+   }  
+   .cloth_line{
+      margin-top: 15px;
+   }
+}
+@media screen and (max-width:376px) {
+   .ipsum_text{
+      margin-top: 10px;
+   }
+   .clothing_div_main{
+      padding-top: 30px;
+      margin-left: 40px;
+   }
+   .box_div_clothi{
+      height: 500px;
+   }
+   .img_div_main{
+      right: 6px;
+   }
+   .img_div_main img{
+        height: 610px;
+   }
+   .clothing{
+      height: 640px;
+   }
+}
+@media screen and (max-width:320px) {
+   .ipsum_text{
+      margin-top: 10px;
+   }
+   .clothing_div_main{
+      padding-top: 30px;
+      margin-left: 40px;
+   }
+   .box_div_clothi{
+      height: 500px;
+   }
+   .img_div_main{
+      right: 0px;
+   }
+   .clothing{
+      height: 630px;
+   }
+}

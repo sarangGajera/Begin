@@ -1,0 +1,102 @@
+/* 1 */
+:root {
+  --font-color: #08080c;
+  --background-color: #eee;
+  --link-color: cornflowerblue;
+  --bg-background2: #2A2320;
+  --bg-background3: #3a322f;
+  --bg-backgroundsider: #fff;
+  --bg-backgroundhover: #0C0C11;
+  --bg-colorhover: #fff;
+  --MuiPaper:black;
+  --crossslidr:black;
+}
+
+/* 2 */
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: #08080c;
+  --link-color: peachpuff;
+  --bg-background2: #0C0C11;
+  --bg-background3: #0C0C11;
+  --bg-backgroundsider: #0C0C11;
+  --bg-backgroundhover: #fff;
+  --bg-colorhover: #0C0C11;
+  --MuiPaper:#292936;
+  --crossslidr:#fff;
+}
+
+/* 3 */
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+/* Custom Dark Mode Toggle Element */
+
+.toggle-theme-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.toggle-theme-wrapper span {
+  font-size: 28px;
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  height: 34px;
+  width: 60px;
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+.dark_div input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.dark_div input:checked + .slider {
+  background-color: #cdcdcd;
+}
+
+.dark_div .slider.round {
+  border-radius: 34px;
+}
+
+.dark_div .slider.round:before {
+  border-radius: 50%;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase {
+  top: 5px !important;
+}
